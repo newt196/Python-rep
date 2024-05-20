@@ -1,0 +1,38 @@
+import os
+
+# Need to outline the path of the folder in use with the merged list
+documents_folder = os.path.expanduser("~/Documents/wire")
+
+file1 = r"C:\Users\nwoodson\Documents\wire\weakpass_3.txt"
+file2 = r"C:\Users\nwoodson\Documents\wire\merged_list11.txt"
+
+# Do the giverd files exist?
+if os.path.exists(file1) and os.path.exists(file2):
+    # Read the contents of the files with specified encoding
+    with open(file1, encoding="latin-1") as f1, open(file2, encoding="utf-8") as f2:
+        list1 = f1.read().splitlines()
+        list2 = f2.read().splitlines()
+
+    # Merge and remove duplicates
+    merged_list = list(set(list1 + list2))
+
+    # Write out
+    output_file = os.path.join(documents_folder, "merged_list12.txt")
+    with open(output_file, "w", encoding="utf-8") as outfile:
+        for item in merged_list:
+            outfile.write("%s\n" % item)
+
+    print("List saved to:", output_file)
+else:
+    print(Something is not right here? You may be missing something.")
+
+
+# A project to merge txt lists.
+# Can be useful if information is known about the target hash or target.
+# This can be used to more accurately spread the net over a custom list and a bigger list like Rock you or a much larger wordlist.
+
+
+# Need to fix codec issues with lists over 5gigs.
+# Need to resolve prompting the user to add which lists to they want to merge.
+# Currently is super inefficient due to needing to adjust the code and find the DIR of the txt list.
+
