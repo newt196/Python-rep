@@ -1,0 +1,202 @@
+################## Corrected code that does run ######################
+# Server Code
+import socket
+import threading
+
+
+host = '127.0.0.1' 
+port = 1234
+
+server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+server.bind((host, port))
+server.listen()
+
+
+clients = []
+names = []
+
+def broadcast(message):
+  for client in clients:
+     client.send(message)
+
+def handle(client):
+  while True:
+    try:
+      message = client.recv(1024)
+      broadcast(message)
+    except:
+      index = clients.index(client)
+      clients.remove(client)
+      client.close()
+      Name = Name[index]
+      broadcast ('{} left!'.format(Name).encode('ascii'))
+      Name.remove(Name)
+      break
+
+# ingress and egress
+def receive():
+
+  while True:
+    client, address = server.accept()
+
+    print("{} has connected".format)(str(address)())
+# how do we process the name variable?
+
+    client.send('Nate'.encode('ascii'))
+    Name = client.recv(1024).decode('ascii')
+    Name.append(Name)
+    clients.append(client)
+
+    print("Name is{}" .format(Name))  
+    broadcast("{} joined!" .format(nickname).encode('ascii'))
+    client.send('Connected to server successfully!' .encode('ascii'))
+
+thread = threading.Thread(target=handle, args=(client,))
+thread.start()
+
+##################End of code for server ############################
+
+
+# Server Code
+import socket
+import threading
+
+# important to remember that socket is used to handle the managment of the network connection
+# manages network connections
+
+# threading is used to control the various muntiple connections that are used to connect to the server
+# needed to manage multiple connections
+
+# Connection info
+# need to make sure that this code can be run in an exe form
+ host = '127.0.0.1' 
+ port = 1234
+
+# need to define the host address and the port that the server will operate on :)
+
+# Initilzaing the server 
+server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+server.bind((host, port))
+server.listen()
+
+# AF_INET= IPV$
+# SOCK_STREAM = TCP connection
+
+# bind just contains the port and host information
+
+clients = []
+names = []
+
+# Broadcast to all connected users
+def broadcast(message):
+  for client in clients:
+     client.send(message)
+
+# logic behind user messages
+def handle(client):
+  while True:
+    try:
+      message = client.recv(1024)
+      broadcast(message)
+    except:
+      index = clients.index(client)
+      clients.remove(client)
+      client.close()
+      Name = Name[index]
+      broadcast ('{} left!'.format(Name).encode('ascii'))
+      Name.remove(Name)
+      break
+
+# ingress and egress
+def receive():
+  while True:
+    client, address = server.accept()
+    print("{} has connected".format(str(address)())
+# how do we process the name variable?
+    client.send('Nate'.encode('ascii')
+    Name = client.recv(1024).decode('ascii')
+    Name.append(Name)
+    clients.append(client)
+
+    print("Name is{}" .format(Name))  
+    broadcast("{} joined!" .format(nickname).encode('ascii'))
+    client.send('Connected to server successfully!' .encode('ascii'))
+
+   thread = threading.Thread(target=handle, args=(client,))
+   thread.start()
+
+
+
+
+# Client code
+import socket
+import threading
+
+Name = input("Choose your account name: ")
+client = socket.socket(socket.AF_inet, socket.SOCK_STREAM)
+client.connect(('127.0.0.1', 1234))
+
+def receive():
+    while True:
+        try:
+            # Receive Message From Server
+            # If 'NICK' Send Nickname
+            message = client.recv(1024).decode('ascii')
+            if message == 'NICK':
+                client.send(nickname.encode('ascii'))
+            else:
+                print(message)
+        except:
+            # Close Connection When Error
+            print("An error occured!")
+            client.close()
+            break
+def write():
+    while True:
+        message = '{}: {}'.format(nickname, input(''))
+        client.send(message.encode('ascii'))
+receive_thread = threading.Thread(target=receive)
+receive_thread.start()
+
+write_thread = threading.Thread(target=write)
+write_thread.start()
+
+##################### Fixed client code ##############################
+
+import socket
+import threading
+
+# Choose account name
+Name = input("Choose your account name: ")
+
+# Connect to the server
+client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+client.connect(('127.0.0.1', 1234))
+
+def receive():
+    while True:
+        try:
+            # Receive message from server
+            # If 'NICK', send chosen nickname
+            message = client.recv(1024).decode('ascii')
+            if message == 'NICK':
+                client.send(Name.encode('ascii'))  # Use the chosen account name
+            else:
+                print(message)
+        except:
+            # Close connection on error
+            print("An error occurred!")
+            client.close()
+            break
+
+def write():
+    while True:
+        message = '{}: {}'.format(Name, input(''))  # Use the chosen account name
+        client.send(message.encode('ascii'))
+
+# Start threads for receiving and writing messages
+receive_thread = threading.Thread(target=receive)
+receive_thread.start()
+
+write_thread = threading.Thread(target=write)
+write_thread.start()
