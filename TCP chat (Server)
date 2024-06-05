@@ -1,24 +1,43 @@
 ################## Corrected code that does run ######################
 # Server Code
+
 import socket
 import threading
 
+# Socket: Helps control the networking portion of the chat client. 
+# Threading: Helps manage muptiple users connecting to the server. (will need different clients to test in verbose mode)
+
+# can we further configure the host ip and not use the loopback address. 
 
 host = '127.0.0.1' 
 port = 1234
+
+# port does not have to be explained
+# interesting to note that we need to run nmap to see if the port is for viewing. 
+# I dont see why it wouldnt because if the clients can connect to the ip and port, nmap should be able to. 
+
+# AF_INET address family - Internet, further explaines that the ip in use is ipv4.
+# SOCK_STREAM Specifies that TCP is in use for the communication port.
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind((host, port))
 server.listen()
 
+# Bind associates the socket with a specific host and port provided in the above.
+
+# further defining who and what connects to the server. 
 
 clients = []
 names = []
+
+# not entirely needed but helps provide feedback to who connects to the server.
 
 def broadcast(message):
   for client in clients:
      client.send(message)
 
+# logic to handle users connecting to the server. defining client handle function to run endlessly
+# 
 def handle(client):
   while True:
     try:
@@ -34,6 +53,7 @@ def handle(client):
       break
 
 # ingress and egress
+
 def receive():
 
   while True:
@@ -54,7 +74,15 @@ def receive():
 thread = threading.Thread(target=handle, args=(client,))
 thread.start()
 
+# Thing to note
+# We can switch this server and port over to UDP if security is a matter or we dont care if connectionless connections are fine
+# TCP on port 1234 may be picked up through nmap or network scans.
+# Because udp is connectionless the server may not show up on network scans or at the very least show FILTeRED
+# Can onyl conifirm when the server is setup and scanned.
+# Interesting to note that we can add cyphers to add the securtiy of the server. 
+
 ##################End of code for server ############################
+
 
 
 # Server Code
