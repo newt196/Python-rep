@@ -1,0 +1,60 @@
+import requests
+from requests_ntlm import HttpNtlmAuth
+from bs4 import BeautifulSoup
+import time
+
+
+with open('password', 'r') as file:
+    password = file.read().strip()
+
+# As much as I like my password in plain text, I wanted a way to access the site with NTLM without my password being accessibnle to the whole office.
+
+if not password:
+    raise ValueError("Password file is empty or could not be read")
+
+
+# will obuscate when moved to Github
+
+
+
+
+username = 'domain\\nathaniel'
+url = "website"
+response = requests.get(url, auth=HttpNtlmAuth(username, password))
+
+if response.status_code == 200:
+    html_content = response.text
+else:
+    print(f"Failed to retrieve the webpage. Status code: {response.status_code}")
+
+def check_status():
+    try:
+        response = requests.get(url, auth=HttpNtlmAuth(username, password))
+        response.raise_for_status()  # Raise an exception for HTTP errors
+
+        soup = BeautifulSoup(response.text, 'html.parser')
+
+        img_tag = soup.find('img', {'src': 'green_indicator.gif'})
+
+        if img_tag:
+            alt_text = img_tag.get('alt', '')
+            return alt_text
+        else:
+            print("Image with specified src not found!")
+            return None
+
+    except requests.exceptions.RequestException as e:
+        print(f"Error fetching the website: {e}")
+        return None
+
+previous_status = check_status()
+
+while True:
+    current_status = check_status()
+
+    if current_status is not None:
+        if current_status != previous_status:
+            print(f"Status changed: {previous_status} -> {current_status}")
+            previous_status = current_status
+
+    time.sleep(2000)
