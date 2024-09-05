@@ -1,3 +1,5 @@
+# need to add module for smtp and check for only "not OK status" 
+# for right now this is good
 import requests
 from requests_ntlm import HttpNtlmAuth
 from bs4 import BeautifulSoup
