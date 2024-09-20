@@ -75,11 +75,6 @@ def check_status():
         print(f"An error occurred: {err}")
         return None
 
-def restart_program():
-    print("[INFO] Restarting program in 5 minutes...")
-    time.sleep(300)  
-    os.execv(sys.executable, ['python'] + sys.argv)  #
-
 
 previous_status = check_status()
 while True:
