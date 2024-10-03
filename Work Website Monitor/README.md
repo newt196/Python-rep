@@ -1,4 +1,4 @@
-Mailscapoe Website Monitoring  
+Mailscape Website Monitoring  
 
 
 - Runs all throughout the workday.
