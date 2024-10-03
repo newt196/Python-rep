@@ -19,5 +19,10 @@ When things are being hindered or slowing down.
 
 
 
+<img width="527" alt="image" src="https://github.com/user-attachments/assets/ba36da79-596c-4b2c-9c8a-ee44497b6634">
+
+
+
+
 <img width="352" alt="image" src="https://github.com/user-attachments/assets/d2b416b8-db7b-439a-aa27-ffa1b5bbd8a5">
 
