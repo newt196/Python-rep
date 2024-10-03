@@ -7,7 +7,8 @@ Mailscapoe Website Monitoring
 
 - IS locks down custom SMTP connections, which is not ideal for automatic alerts through the email channel. 
 
-Shows when all things are good
+
+When things are good.
 
 
 <img width="374" alt="image" src="https://github.com/user-attachments/assets/79808b76-cc7a-418b-b821-c35383af421b">
