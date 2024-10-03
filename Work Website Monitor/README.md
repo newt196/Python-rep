@@ -9,7 +9,7 @@ Mailscape Website Monitoring
 
 
 
-Past of the HTML being monitored 
+HTML being monitored 
 
 Parts being monitored, unable to show the Server being monitored.
 
