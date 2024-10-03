@@ -15,3 +15,8 @@ Shows when all things are good
 
 
 When things are being hindered or slowing down.
+
+
+
+<img width="352" alt="image" src="https://github.com/user-attachments/assets/d2b416b8-db7b-439a-aa27-ffa1b5bbd8a5">
+
