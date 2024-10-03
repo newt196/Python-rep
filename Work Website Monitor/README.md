@@ -11,8 +11,19 @@ Mailscape Website Monitoring
 
 Past of the HTML being monitored 
 
+Parts being monitored, unable to show the Server being monitored.
 
-<img width="254" alt="image" src="https://github.com/user-attachments/assets/ab20d44a-2d72-44dc-b906-a3ac44f121a1">
+
+Good
+
+![image](https://github.com/user-attachments/assets/b076b14c-02fe-42bb-b49f-f98a09d1429e)
+
+
+
+Error has occured within the mail servers. 
+
+![image](https://github.com/user-attachments/assets/1baee24f-1842-4688-88c7-48edc52ba7f1)
+
 
 
 
