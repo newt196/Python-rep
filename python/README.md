@@ -5,7 +5,11 @@ General project that is supposed to simulate Cewl in python
 A few note worthy features
 -Error checks for sites that are unable to connect
 
--Checks for sites using auth
+-Error checking 
+
+
+<img width="377" alt="image" src="https://github.com/user-attachments/assets/ed043d01-6a79-4da7-922e-4e396ad246ac">
+
 
 Allows the user to add a site to scrape.
 
