@@ -20,6 +20,8 @@ Allows the user to add a site to scrape.
 
 <img width="389" alt="image" src="https://github.com/user-attachments/assets/ba87aef5-837d-4ce8-89f5-1427456d862f">
 
+
+
 Will show as many charecters as needed. 
 
 <img width="376" alt="image" src="https://github.com/user-attachments/assets/d54ddbce-95e2-4e72-be01-6c2887733785">
@@ -31,6 +33,10 @@ Will show as many charecters as needed.
 
 
 <img width="378" alt="image" src="https://github.com/user-attachments/assets/eeea2817-2b29-4279-9809-07304789bd95">
+
+
+<img width="375" alt="image" src="https://github.com/user-attachments/assets/5dbc89bd-d17b-4c3b-adad-d15aa1de62e3">
+
 
 
 
