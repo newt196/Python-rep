@@ -5,7 +5,15 @@ Mailscape Website Monitoring
 
 - Sadly have to manually alert team when an alert pops up.
 
-- IS locks down custom SMTP connections, which is not ideal for automatic alerts through the email channel. 
+- IS locks down custom SMTP connections, which is not ideal for automatic alerts through the email channel.
+
+
+
+Past of the HTML being monitored 
+
+
+<img width="254" alt="image" src="https://github.com/user-attachments/assets/ab20d44a-2d72-44dc-b906-a3ac44f121a1">
+
 
 
 When things are good.
