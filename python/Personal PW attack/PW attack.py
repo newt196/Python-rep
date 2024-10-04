@@ -7,7 +7,7 @@ import random
 class WordApp:
     def __init__(self, master):
         self.master = master
-        master.title("Word Collector")
+        master.title("Password juicer")
         master.configure(bg="#e0f7fa")  
 
         
