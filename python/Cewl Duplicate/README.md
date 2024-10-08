@@ -42,7 +42,7 @@ Small update on the Cewl 0.5
 
 Ability to add variability with the wordlist created.
 
-Ability to add symbols and numbers to the wordlist, in 
+Ability to add symbols and numbers to the wordlist, in addition to adding capitols to the generated words. 
 
 
 
