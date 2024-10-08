@@ -1,11 +1,29 @@
 **Password juicer**
 
-#update 2.0#
+#Update 2.0#
 
 Added a few more options to adjust the list generated, also as lists grow. Users can now select the most optimal lists for small, medium and large lists. 
+Threading has been implemented to speed up time. This is due to the program crashing when running to many words. 
 
 
-<img width="620" alt="image" src="https://github.com/user-attachments/assets/6f124295-7f55-46f1-9b5a-85dbcd8efe9e">
+
+<img width="617" alt="image" src="https://github.com/user-attachments/assets/164ed813-4228-4d77-baf4-6fcce6fef3f4">
+
+
+
+
+
+
+Small list:
+
+<img width="182" alt="image" src="https://github.com/user-attachments/assets/7f66797b-203b-4d2f-98d8-a7b1e219ec03">
+
+Medium List:
+
+<img width="182" alt="image" src="https://github.com/user-attachments/assets/f5b5c882-e6f9-46f8-b08b-9c60d0b3f20b">
+
+
+Large List:
 
 
 
