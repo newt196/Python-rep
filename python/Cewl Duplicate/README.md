@@ -38,5 +38,16 @@ Will show as many charecters as needed.
 <img width="375" alt="image" src="https://github.com/user-attachments/assets/5dbc89bd-d17b-4c3b-adad-d15aa1de62e3">
 
 
+Small update on the Cewl 0.5
+
+Ability to add variability with the wordlist created.
+
+Ability to add symbols and numbers to the wordlist, in 
+
+
+
+
+<img width="377" alt="image" src="https://github.com/user-attachments/assets/9d1ae180-e00b-42d6-9165-6a0412282b89">
+
 
 
