@@ -1,85 +1,82 @@
-**Password juicer**
+# Password Juicer
 
-#Update 2.0#
+**Version 2.0 Update**
 
-Added a few more options to adjust the list generated, also as lists grow. Users can now select the most optimal lists for small, medium and large lists. 
-Threading has been implemented to speed up time. This is due to the program crashing when running to many words. 
+Password Juicer is a Python-based wordlist generator designed to create optimized password lists for selected targets, websites, or specific user inputs.
 
+---
 
+## What's New in Version 2.0?
 
-<img width="617" alt="image" src="https://github.com/user-attachments/assets/164ed813-4228-4d77-baf4-6fcce6fef3f4">
+- **Enhanced List Generation:** Users can now select from small, medium, and large wordlists depending on their needs.
+- **Threading Implementation:** Threading has been added to improve performance, especially for larger wordlists, preventing crashes caused by too many word entries.
+- **Improved Customization:** New options allow for greater control over the generated wordlist, providing flexibility for various use cases.
 
+---
 
+## Key Features
 
+- **Custom Wordlist Sizes:**
+    - Small, medium, and large list generation for different target scenarios.
+    - Optimized sorting and filtering methods for handling lists of varying sizes.
 
+    ![Small List](https://github.com/user-attachments/assets/7f66797b-203b-4d2f-98d8-a7b1e219ec03)
+    *Small List*
 
+    ![Medium List](https://github.com/user-attachments/assets/f5b5c882-e6f9-46f8-b08b-9c60d0b3f20b)
+    *Medium List*
 
-Small list:
+    ![Large List](https://github.com/user-attachments/assets/beb38a44-754f-4b64-b855-258a99be9381)
+    *Large List*
 
-<img width="182" alt="image" src="https://github.com/user-attachments/assets/7f66797b-203b-4d2f-98d8-a7b1e219ec03">
+- **Wordlist Generation for Targeted Inputs:**
+    - Create wordlists based on known details about a target, such as name, website, or other relevant information.
 
-Medium List:
+    ![Target Input](https://github.com/user-attachments/assets/a0e7dda8-4868-425f-8b13-4e436f864ed3)
 
-<img width="182" alt="image" src="https://github.com/user-attachments/assets/f5b5c882-e6f9-46f8-b08b-9c60d0b3f20b">
+- **File Saving and Exporting:**
+    - Prompt the user for a destination to save the generated wordlist as a `.txt` file.
 
+    ![Save Prompt](https://github.com/user-attachments/assets/b64a61df-342e-4922-a3b9-5d14d20b83c1)
 
-Fairly Large List:
+    - Confirmation of successful file saving.
 
-<img width="181" alt="image" src="https://github.com/user-attachments/assets/beb38a44-754f-4b64-b855-258a99be9381">
+    ![Save Confirmation](https://github.com/user-attachments/assets/55a29861-3bce-4f4a-9f50-bcc0d8e3e89f)
 
+- **Results Overview:**
+    - Once the wordlist is generated, results are displayed for user review.
 
+    ![Results](https://github.com/user-attachments/assets/42f90d77-642c-4560-b6c3-71b19e58123d)
 
+---
 
+## How It Works
 
+1. **Input Target Information:**
+   Input specific details you know about the target (such as names, keywords, or sites) into the interface.
 
+   ![Target Info Input](https://github.com/user-attachments/assets/e4e83e59-d48c-4954-bb4c-4bd4576523ec)
 
+2. **Select Wordlist Size:**
+   Choose between small, medium, or large wordlists depending on your needs.
 
-Wordlist creator created in Python for selcted targets, site and ****. 
+3. **Save and Export:**
+   Once the wordlist is generated, save it to a specified location in `.txt` format for further use.
 
-<img width="378" alt="image" src="https://github.com/user-attachments/assets/a0e7dda8-4868-425f-8b13-4e436f864ed3">
+4. **Review Results:**
+   View the generated wordlist directly within the tool to ensure it meets your requirements.
 
+---
 
-If we know a few things about the target:
+## Screenshots
 
+![Overview](https://github.com/user-attachments/assets/164ed813-4228-4d77-baf4-6fcce6fef3f4)
+*Overview of Password Juicer*
 
+---
 
-<img width="378" alt="image" src="https://github.com/user-attachments/assets/e4e83e59-d48c-4954-bb4c-4bd4576523ec">
+## How to Run
 
-
-Prompt the user where to save the txt file
-
-
-<img width="637" alt="image" src="https://github.com/user-attachments/assets/b64a61df-342e-4922-a3b9-5d14d20b83c1">
-
-
-
-Successfully saved
-
-
-![image](https://github.com/user-attachments/assets/55a29861-3bce-4f4a-9f50-bcc0d8e3e89f)
-
-
-
-Results:
-
-
-
-<img width="652" alt="image" src="https://github.com/user-attachments/assets/42f90d77-642c-4560-b6c3-71b19e58123d">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/password-juicer.git
