@@ -1,53 +1,132 @@
-General project that is supposed to simulate Cewl in python
+# Password Scraper
 
-**Password Scraper**
+A Python-based project that simulates the functionality of [Cewl](https://github.com/digininja/CeWL). This tool scrapes web pages and generates wordlists that can be used for password generation or analysis.
 
-A few note worthy features
--Error checks for sites that are unable to connect
+---
 
--Error checking 
+## Features
 
+- **Error Handling:** Automatically detects and handles errors, such as being unable to connect to a website.
+- **Customizable Word Count:** Users can set the number of words to scrape from a given website.
+- **Character Length Flexibility:** The tool can display and extract words of any length.
+- **Variability in Wordlist Generation:** Option to add symbols, numbers, and capitalization to the generated wordlist.
+- **User-Friendly Interface:** Simple and intuitive for users to quickly add sites to scrape and configure settings.
 
-<img width="377" alt="image" src="https://github.com/user-attachments/assets/ed043d01-6a79-4da7-922e-4e396ad246ac">
+---
 
+## Usage Overview
 
-Allows the user to add a site to scrape.
+### 1. Error Checking for Site Connectivity
+If a website cannot be connected or scraped, the tool will handle the error gracefully, ensuring a smooth user experience.
 
-<img width="380" alt="image" src="https://github.com/user-attachments/assets/597f549f-a11d-4caf-90c3-422f462996e6">
+![Error Checking](https://github.com/user-attachments/assets/ed043d01-6a79-4da7-922e-4e396ad246ac)
 
+---
 
--User can adjust the number of words the program scrapes for.
+### 2. Adding a Site to Scrape
+Users can easily input the URL of the website they want to scrape for words.
 
-<img width="389" alt="image" src="https://github.com/user-attachments/assets/ba87aef5-837d-4ce8-89f5-1427456d862f">
+![Add Site](https://github.com/user-attachments/assets/597f549f-a11d-4caf-90c3-422f462996e6)
 
+---
 
+### 3. Adjustable Word Count
+Users have control over how many words the program scrapes from the site.
 
-Will show as many charecters as needed. 
+![Adjust Word Count](https://github.com/user-attachments/assets/ba87aef5-837d-4ce8-89f5-1427456d862f)
 
-<img width="376" alt="image" src="https://github.com/user-attachments/assets/d54ddbce-95e2-4e72-be01-6c2887733785">
+---
 
+### 4. Display Flexibility
+The program supports displaying as many characters as needed based on the site's content.
 
+![Character Display](https://github.com/user-attachments/assets/d54ddbce-95e2-4e72-be01-6c2887733785)
 
-<img width="377" alt="image" src="https://github.com/user-attachments/assets/050113c8-0555-4c97-a0d4-ea76d8ca5305">
+---
 
+## New in Version 0.5
 
+- **Enhanced Wordlist Variability:** Add symbols, numbers, and capitalize words to the wordlist for more complex password generation.
+- **Improved Scraping Efficiency:** Faster and more robust scraping engine with better error handling.
 
-<img width="378" alt="image" src="https://github.com/user-attachments/assets/eeea2817-2b29-4279-9809-07304789bd95">
+![Version 0.5](https://github.com/user-attachments/assets/9d1ae180-e00b-42d6-9165-6a0412282b89)
 
+---
 
-<img width="375" alt="image" src="https://github.com/user-attachments/assets/5dbc89bd-d17b-4c3b-adad-d15aa1de62e3">
+## Future Plans
+- **Expanded Website Support:** Future updates will focus on broadening support for different types of websites.
+- **Advanced Scraping Options:** Planned features include scraping specific tags or sections of a website for more targeted wordlists.
 
+---
 
-Small update on the Cewl 0.5
+## How to Use
 
-Ability to add variability with the wordlist created.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/password-scraper.git
+# Password Scraper
 
-Ability to add symbols and numbers to the wordlist, in addition to adding capitols to the generated words. 
+A Python-based project that simulates the functionality of [Cewl](https://github.com/digininja/CeWL). This tool scrapes web pages and generates wordlists that can be used for password generation or analysis.
 
+---
 
+## Features
 
+- **Error Handling:** Automatically detects and handles errors, such as being unable to connect to a website.
+- **Customizable Word Count:** Users can set the number of words to scrape from a given website.
+- **Character Length Flexibility:** The tool can display and extract words of any length.
+- **Variability in Wordlist Generation:** Option to add symbols, numbers, and capitalization to the generated wordlist.
+- **User-Friendly Interface:** Simple and intuitive for users to quickly add sites to scrape and configure settings.
 
-<img width="377" alt="image" src="https://github.com/user-attachments/assets/9d1ae180-e00b-42d6-9165-6a0412282b89">
+---
 
+## Usage Overview
 
+### 1. Error Checking for Site Connectivity
+If a website cannot be connected or scraped, the tool will handle the error gracefully, ensuring a smooth user experience.
 
+![Error Checking](https://github.com/user-attachments/assets/ed043d01-6a79-4da7-922e-4e396ad246ac)
+
+---
+
+### 2. Adding a Site to Scrape
+Users can easily input the URL of the website they want to scrape for words.
+
+![Add Site](https://github.com/user-attachments/assets/597f549f-a11d-4caf-90c3-422f462996e6)
+
+---
+
+### 3. Adjustable Word Count
+Users have control over how many words the program scrapes from the site.
+
+![Adjust Word Count](https://github.com/user-attachments/assets/ba87aef5-837d-4ce8-89f5-1427456d862f)
+
+---
+
+### 4. Display Flexibility
+The program supports displaying as many characters as needed based on the site's content.
+
+![Character Display](https://github.com/user-attachments/assets/d54ddbce-95e2-4e72-be01-6c2887733785)
+
+---
+
+## New in Version 0.5
+
+- **Enhanced Wordlist Variability:** Add symbols, numbers, and capitalize words to the wordlist for more complex password generation.
+- **Improved Scraping Efficiency:** Faster and more robust scraping engine with better error handling.
+
+![Version 0.5](https://github.com/user-attachments/assets/9d1ae180-e00b-42d6-9165-6a0412282b89)
+
+---
+
+## Future Plans
+- **Expanded Website Support:** Future updates will focus on broadening support for different types of websites.
+- **Advanced Scraping Options:** Planned features include scraping specific tags or sections of a website for more targeted wordlists.
+
+---
+
+## How to Use
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/password-scraper.git
