@@ -3,6 +3,9 @@
 A simple Cross-Site Scripting (XSS) vulnerability scanner built using Python. This application scans web pages for forms and attempts to submit XSS payloads to check for vulnerabilities.
 Used for both static and dynamic pages that a user want so scan. 
 
+<img width="593" alt="image" src="https://github.com/user-attachments/assets/54a141e5-42d6-43a3-b523-5307d654eb3b">
+
+
 ## Features
 
 - Scans a given URL for HTML forms.
