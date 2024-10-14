@@ -17,11 +17,15 @@ The scanner performs the following tasks:
 
 The core functionality for scanning XSS vulnerabilities is encapsulated in the `scan_xss` function. Below is a detailed breakdown of how this function works:
 
+
+<img width="611" alt="image" src="https://github.com/user-attachments/assets/eba68943-31e2-499d-9d1f-1561cf63eacb">
+
 ### Function Definition
 ```python
 def scan_xss(url):  # uses the data to see if the site is vuln
 
-<img width="611" alt="image" src="https://github.com/user-attachments/assets/87d75e40-d372-4908-812b-7a27011bc281">
+
+
 
 
 
