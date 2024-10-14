@@ -1,5 +1,3 @@
-<img width="422" alt="image" src="https://github.com/user-attachments/assets/f8f62ee8-46c2-416e-a2f7-bd9020d76455"># XSS Vulnerability Scanner
-
 ## Overview
 
 The XSS Vulnerability Scanner is a tool designed to automatically detect Cross-Site Scripting (XSS) vulnerabilities in web applications. This scanner works by crawling a given URL, identifying forms, and submitting various XSS payloads to see if the application is susceptible to attacks. 
