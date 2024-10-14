@@ -1,4 +1,4 @@
-# XSS Vulnerability Scanner
+# Basic XSS Check
 
 This project is a simple Cross-Site Scripting (XSS) vulnerability scanner built using Python and Tkinter. The scanner identifies potential XSS vulnerabilities by submitting JavaScript payloads to web forms and analyzing the server's responses.
 
