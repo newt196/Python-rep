@@ -1,10 +1,12 @@
-# XSS Vulnerability Scanner
+<img width="422" alt="image" src="https://github.com/user-attachments/assets/f8f62ee8-46c2-416e-a2f7-bd9020d76455"># XSS Vulnerability Scanner
 
 ## Overview
 
 The XSS Vulnerability Scanner is a tool designed to automatically detect Cross-Site Scripting (XSS) vulnerabilities in web applications. This scanner works by crawling a given URL, identifying forms, and submitting various XSS payloads to see if the application is susceptible to attacks. 
 
 
+
+<img width="427" alt="image" src="https://github.com/user-attachments/assets/17c0d10c-6442-4dc1-94e8-78713c1965aa">
 
 
 ## Features
@@ -40,6 +42,11 @@ To run the XSS Vulnerability Scanner, you'll need Python and a few libraries. Fo
 - **Command-line Arguments**:
     - `--url`: The target URL to scan for XSS vulnerabilities (required).
     - `--obey-robots`: If specified, the scanner will respect `robots.txt` rules.
+ 
+
+
+  <img width="422" alt="image" src="https://github.com/user-attachments/assets/d05a81f9-4b63-4ab3-9882-a09b2a7db9e0">
+
 
 ## Example
 
