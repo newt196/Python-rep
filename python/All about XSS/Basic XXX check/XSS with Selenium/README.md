@@ -22,7 +22,7 @@ Used for both static and dynamic pages that a user want so scan.
   - beautifulsoup4
   - colorama
   - selenium
-  - Tkinter (included with Python standard library)
+  - Tkinter 
 
 ### Install Required Libraries
 
