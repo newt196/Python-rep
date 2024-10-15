@@ -2,7 +2,6 @@ from requests_ntlm import HttpNtlmAuth
 from bs4 import BeautifulSoup
 import time
 import requests
-import winsound
 import platform
 
 
