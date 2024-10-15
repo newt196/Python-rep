@@ -85,6 +85,29 @@ More error checking for the site, in case the site is down or domain has changed
 We host 20+ servers with different utilities being monitored. 
 An array has been created for both the servs and the categories of the utilities can be used to scrape and monitor the HTML code of the site. 
 
+The request is used to parse or generally analyze the content in the soup object.
+
+
+<img width="431" alt="image" src="https://github.com/user-attachments/assets/0a2bbe99-4351-47e0-bd08-2c28b43af1ff">
+
+Loop: Element Status to go through the servers and Catagories in the Array that was earlier declared. 
+loops through each server and each category, constructing a URL pattern in the form "{category}.aspx?server={server}"
+
+
+
+<img width="397" alt="image" src="https://github.com/user-attachments/assets/5f959dee-2b17-4f4f-a5fd-d109fd9a1990">
+
+The object that changes is alt_text. For context if an error is detected. "OK" = Green will change to "Error" = Red
+If Error is found within the img_tag, than the the element status is pinged and the print statement is made.
+
+
+
+<img width="382" alt="image" src="https://github.com/user-attachments/assets/37ae440f-f18b-4220-b0bf-9196a88072d6">
+
+
+
+
+
 
 
 
