@@ -6,7 +6,7 @@ from tkinter import filedialog, messagebox
 def merge_files(file1, file2, output_folder):
     if os.path.exists(file1) and os.path.exists(file2):
         try:
-            with open(file1, encoding="latin-1") as f1, open(file2, encoding="utf-8") as f2:
+            with open(file1, encoding="utf-8") as f1, open(file2, encoding="utf-8") as f2:
                 list1 = f1.read().splitlines()
                 list2 = f2.read().splitlines()
 
