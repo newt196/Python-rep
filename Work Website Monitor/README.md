@@ -104,6 +104,9 @@ If Error is found within the img_tag, than the the element status is pinged and 
 
 <img width="382" alt="image" src="https://github.com/user-attachments/assets/37ae440f-f18b-4220-b0bf-9196a88072d6">
 
+While True Logic to give a headsup when "Error" is changed to "OK"
+
+<img width="447" alt="image" src="https://github.com/user-attachments/assets/d876d8f7-d3b3-45ce-b9f7-52f41573935b">
 
 
 
