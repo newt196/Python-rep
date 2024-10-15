@@ -12,44 +12,6 @@ This Python application provides an easy-to-use graphical user interface (GUI) f
 - **Easy-to-use GUI**: Simple graphical interface built using Tkinter.
 - **File selection**: Uses native file dialogs to select files and folders.
 
-## Requirements
-
-You will need the following to run the application:
-
-- **Python 3.x**
-- Python libraries:
-  - `tkinter` (usually pre-installed with Python)
-  - `os` (part of the Python standard library)
-
-## Installation
-
-1. **Clone the repository** or download the code files.
-2. **Ensure Python 3.x** is installed on your machine.
-3. Install the required dependencies (if not already available):
-
-    ```bash
-    pip install tk
-    ```
-
-## How to Use
-
-1. **Run the application**: Execute the script by running the following command:
-
-    ```bash
-    python main.py
-    ```
-
-2. **Select files**:
-   - Click "Browse" to select File 1.
-   - Click "Browse" again to select File 2.
-   - Choose an output folder where the merged file will be saved.
-
-3. **Merge the files**: 
-   - Click the "Merge Files" button to start the process.
-   - The merged file will be saved as `merged_list.txt` in the selected output folder.
-   - A success message will appear once the merge is complete.
-
----
 
 ## Example Screenshots
 
