@@ -80,9 +80,9 @@ Here is a view of the entire interface, showing file selection and output folder
 
 ![Application Interface](<https://github.com/user-attachments/assets/5809c25e-3ec4-48f5-94e9-4ca2486f41a5>)
 
-<img width="503" alt="image" src="https://github.com/user-attachments/assets/31fed744-ebd2-406f-bf2b-c4df24628993">
+![Application Interface](https://github.com/user-attachments/assets/31fed744-ebd2-406f-bf2b-c4df24628993)
 
-<img width="507" alt="image" src="https://github.com/user-attachments/assets/3bb2f3b8-dfff-4ffd-90e9-11870716bdd5">
+![Application Interface](https://github.com/user-attachments/assets/3bb2f3b8-dfff-4ffd-90e9-11870716bdd5)
 
 
 
