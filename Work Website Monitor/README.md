@@ -40,6 +40,29 @@ When things are being hindered or slowing down.
 
 <img width="527" alt="image" src="https://github.com/user-attachments/assets/ba36da79-596c-4b2c-9c8a-ee44497b6634">
 
+For those interested in the logic of the "wwhy" and "what" the code base is :)
+Really just used to reiterate on existing python skills, performance, improvements and explanation.
+
+
+The "Imports and "Froms"
+
+
+<img width="237" alt="image" src="https://github.com/user-attachments/assets/784bbe00-4691-4c0b-84b4-9f9cbbafa325">
+
+
+1. Sends requests to HTML in this case, NTLM which is used for the site. (Side Note: I didnt know NTLM was uised because of SSO)
+2. BS4 | Beautiful soup package that pulls HTML content which was used to track and monitor for this python alerting program.
+3. Time is used for time.sleep(100), which pauses the execution of the program for 100 seconds between iterations of the loop.
+4. Controls the requests info and logic for accessing HTTP info
+5. platform was used for accessing information about the operating system and hardware.
+
+Used to in the best manner I found, add my AD user and pass to the site. 
+Password was saved in a location i only have access to.
+
+
+<img width="202" alt="image" src="https://github.com/user-attachments/assets/d77ca266-df45-4bdf-a3ee-fb6c974d65f1">
+
+
 
 
 
