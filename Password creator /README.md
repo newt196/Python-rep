@@ -40,7 +40,7 @@ The merged list is hardcoded, which I could see being an issue when merging mult
 The same encoding is used just in case.
 
 
- outfile.write("%s\n" % item)  is responmcislbe for writing each line in the file. 
+outfile.write("%s\n" % item)  is responsible for writing each line in the file.
 
 The %s is a placeholder for a string value. 
 \n represents a newline character, which ensures that each item (line) from the list will be written on a new line in the output file.
@@ -51,8 +51,10 @@ The %s is a placeholder for a string value.
 
 
 
+Basic error handling, super dumb when running and no error even basic is returned.
 
 
+<img width="435" alt="image" src="https://github.com/user-attachments/assets/348e98d7-332f-40b5-be79-51d9283d9a7c">
 
 
 ## Example Screenshots
