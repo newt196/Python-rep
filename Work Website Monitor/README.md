@@ -61,10 +61,35 @@ The "Imports and "Froms"
 5. platform was used for accessing information about the operating system and hardware.
 
 Used to in the best manner I found, add my AD user and pass to the site. 
-Password was saved in a location i only have access to.
+Password was saved in a location I only have access to.
 
 
 <img width="202" alt="image" src="https://github.com/user-attachments/assets/d77ca266-df45-4bdf-a3ee-fb6c974d65f1">
+
+
+Error checking for the password
+
+<img width="446" alt="image" src="https://github.com/user-attachments/assets/21f99fe4-476d-40eb-a5fc-394be2f289c3">
+
+Domain is pretty straightforward
+Simply send a get request to the site to allow access.
+
+<img width="389" alt="image" src="https://github.com/user-attachments/assets/ee094280-eeaf-43e4-b87f-1c0b27ffcec6">
+
+
+More error checking for the site, in case the site is down or domain has changed.
+(Only used once)
+
+<img width="439" alt="image" src="https://github.com/user-attachments/assets/8025fd53-d68a-49f3-8932-58c17dea3d46">
+
+
+
+
+
+
+
+
+
 
 
 
