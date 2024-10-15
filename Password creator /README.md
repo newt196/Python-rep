@@ -1,9 +1,35 @@
 **Simple Password Merger**
 
-Allows users to combine fairly large .txt files to bigger opnes.
-Thought it would be cool to experiment with outside of excel.
+# File Merger GUI Application
 
-Allows and gives feedback on what users want to combine and where to put the file.
+This Python application allows you to merge the contents of two text files into a single output file using a graphical user interface (GUI). The app removes duplicate lines and saves the merged content in a user-specified output folder.
+
+## Features
+
+- Select two text files to merge.
+- Choose an output folder to save the merged file.
+- Duplicates are automatically removed.
+- The output is saved as `merged_list.txt` in the specified folder.
+- Easy-to-use graphical interface created with Tkinter.
+- File selection using native file dialogs.
+
+## Requirements
+
+To run this application, you will need:
+
+- Python 3.x
+- The following Python libraries (install via `pip` if not already installed):
+  - `tkinter` (pre-installed with Python in most distributions)
+  - `os`
+
+## Installation
+
+1. Clone the repository or download the code files.
+2. Ensure that Python 3.x is installed on your machine.
+3. Install required dependencies using the following command:
+
+   ```bash
+   pip install tk
 
 
 <img width="437" alt="image" src="https://github.com/user-attachments/assets/3635b1e7-17d3-4c93-b276-47119bced8b4">
