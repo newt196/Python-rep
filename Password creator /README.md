@@ -12,6 +12,48 @@ This Python application provides an easy-to-use graphical user interface (GUI) f
 - **Easy-to-use GUI**: Simple graphical interface built using Tkinter.
 - **File selection**: Uses native file dialogs to select files and folders.
 
+## Code and Logic
+
+OS is used to create and control the logic behind the file paths that are wanting to be merged.
+Tkinter is the logic behind the GUI
+
+
+<img width="286" alt="image" src="https://github.com/user-attachments/assets/f498fe19-37d6-49d7-85e6-cb31a9aa3768">
+
+
+I like this part because it gave me the most trouble.
+Starting with the merge_files function that control each file.
+We first need to look at the opening utf file 1 and file 2. UTF-8 was used because it supported all of the characters within a wordlist.
+I by default used latin-8 and other symbols were not covered and the program would through an error.
+Didn't know this would be an issue until running it in Chatgpt and confirming the best use in Stackoverflow. 
+
+ For list1 = and list2= .splitlines() is a string method that splits the file content into individual lines. 
+ Them removing the newline characters (\n) from each line
+
+
+
+<img width="476" alt="image" src="https://github.com/user-attachments/assets/5afcf09a-25d2-4e5e-a3ed-30f0814565dd">
+
+
+This is where the output is defined and the import OS comes in. 
+The merged list is hardcoded, which I could see being an issue when merging multipel lists.
+The same encoding is used just in case.
+
+
+ outfile.write("%s\n" % item)  is responmcislbe for writing each line in the file. 
+
+The %s is a placeholder for a string value. 
+\n represents a newline character, which ensures that each item (line) from the list will be written on a new line in the output file.
+
+
+<img width="455" alt="image" src="https://github.com/user-attachments/assets/9fe1b7d8-8fb0-492c-926c-9d6b36bf0b21">
+
+
+
+
+
+
+
 
 ## Example Screenshots
 
