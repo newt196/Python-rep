@@ -45,9 +45,11 @@ outfile.write("%s\n" % item)  is responsible for writing each line in the file.
 The %s is a placeholder for a string value. 
 \n represents a newline character, which ensures that each item (line) from the list will be written on a new line in the output file.
 
+A "for" loop is used iterate over each item in the merged_list
+Thios is then used to combine items in the list of lines from file1 and file2 until completion 
+
 
 <img width="455" alt="image" src="https://github.com/user-attachments/assets/9fe1b7d8-8fb0-492c-926c-9d6b36bf0b21">
-
 
 
 
