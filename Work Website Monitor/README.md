@@ -78,9 +78,15 @@ Simply send a get request to the site to allow access.
 
 
 More error checking for the site, in case the site is down or domain has changed.
-(Only used once)
+(Only used once, or I think twice two to site repairs.)
 
 <img width="439" alt="image" src="https://github.com/user-attachments/assets/8025fd53-d68a-49f3-8932-58c17dea3d46">
+
+We host 20+ servers with different utilities being monitored. 
+An array has been created for both the servs and the categories of the utilities can be used to scrape and monitor the HTML code of the site. 
+
+
+
 
 
 
