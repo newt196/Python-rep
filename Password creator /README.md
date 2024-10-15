@@ -78,6 +78,7 @@ Here is a view of the entire interface, showing file selection and output folder
 
 
 
-![Application Interface](https://github.com/user-attachments/assets/3635b1e7-17d3-4c93-b276-47119bced8b4">)
+![Application Interface](<https://github.com/user-attachments/assets/5809c25e-3ec4-48f5-94e9-4ca2486f41a5>
+)
 
 
