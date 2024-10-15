@@ -75,12 +75,9 @@ Here is a view of the entire interface, showing file selection and output folder
 
 ![Application Interface](https://github.com/user-attachments/assets/106a054d-b389-4f7e-960b-3660c653e3e0)
 
----
 
-## License
+![Application Interface](https://github.com/user-attachments/assets/106a054d-b389-4f7e-960b-3660c653e3e0)
 
-This project is licensed under the MIT License.
+<img width="437" alt="image" src="https://github.com/user-attachments/assets/3635b1e7-17d3-4c93-b276-47119bced8b4">
 
----
 
-**Enjoy merging files with ease!**
