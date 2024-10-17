@@ -37,6 +37,26 @@ The application supports the following hash types:
   - CRC32
   - CRC32C
   - Fletcher32
+ 
+## Code Writeup
+Imports and Froms
+
+Hashing library import that contains all of the hash functions that are basic. Like md5 and Sha.
+Tkinter does not need a intro. Logic to control the GUI.
+
+
+<img width="230" alt="image" src="https://github.com/user-attachments/assets/2cdfa517-27ea-44ad-a1af-9dc8a2803f9f">
+
+
+Array of hashes that are supported for the user.
+Need to add a bigger library as more uncommon hashes are used. 
+
+
+<img width="109" alt="image" src="https://github.com/user-attachments/assets/3a97ee0a-9b90-4681-b12f-dcfe2eb2000f">
+
+
+
+
 
 ## Installation
 
