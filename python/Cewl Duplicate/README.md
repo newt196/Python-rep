@@ -46,26 +46,45 @@ Could be optimized to control more complex websites, elements, and links provide
 <img width="427" alt="image" src="https://github.com/user-attachments/assets/135cd095-75b1-45b9-9a51-593416f373db">
 
 
-Explanation:
-
 The main function that retrieves the most common words where nn=10 is the number of elements returned.
 Can be increased later on for bigger sites.
 Basic error checking with "try" in case the site is down or unreachable.
 
 
-Error Handling: Checks if the request is successful (status code 200). If not, it returns an error message.
-BeautifulSoup: Parses the HTML content of the page.
-Extracting Visible Text: It uses the extract_visible_text() function to get readable content from the page.
-Cleaning the Text: After getting the visible text, the function cleans it using the clean_text() function, removing unwanted characters and short words.
-Counting Words: It uses Counter() to count the frequency of each word, and most_common(top_n) to get the top N most frequent words.
-Error Handling in General: If anything goes wrong (e.g., the page isn't accessible), the exception is caught, and an error message is returned.
-Key Decision:
 
-They set the default number of common words to 10 but allow the user to specify a different number. The programmer also mentions that higher values (e.g., 50-200) might be useful for more detailed analysis.
+All elements provded are used to 
+first retrieve the heml elements with Soup.
+second Retreeive readable content from the provided page within its HTML code.
+Third, cleaning the text into a more presentable format. 
+lastly counts and handles all of the most common words or the words that appear in the count the most amount of times. (in this case its 10 most common words)
 
 
 
 <img width="526" alt="image" src="https://github.com/user-attachments/assets/05ee09d3-bbf6-42b9-86d9-93fcc868230a">
+
+
+Where before is to gather all of the most common elements within the function.
+We are now trying to show the user all of the most common elements. 
+
+"If" (isinstance(result, str)) A conditional statement checks whether result is a string.
+ If the result is a string, it means an error occurred since get_top_words() returns a string in case of errors.
+
+else Block - "If" result is not a string (meaning no error occurred), the else block will execute.
+Effect: This block clears the previous results from the result text box (result_text.delete(1.0, tk.END)) and displays the top words with their counts using a for loop.
+for Loop (for word, count in result):
+
+
+The loop then runs through the list of top words and their counts.
+ For each word-count pair, the loop inserts the word and count into the result text box.
+
+ for word, count in result:
+            result_text.insert(tk.END, f"{word}: {count}\n") #
+
+
+
+
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/346ed137-238b-4d6f-9c96-1bbf88eb4cda">
+
 
 
 
