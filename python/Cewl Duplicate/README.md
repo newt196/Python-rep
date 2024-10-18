@@ -12,6 +12,37 @@ A Python-based project that simulates the functionality of [Cewl](https://github
 - **Variability in Wordlist Generation:** Option to add symbols, numbers, and capitalization to the generated wordlist.
 - **User-Friendly Interface:** Simple and intuitive for users to quickly add sites to scrape and configure settings.
 
+## Code Writeup
+
+tkinter - Gui builder for Windows and Linux.
+messagebox - Logic within Tkinter to show popups and alerts.
+BeautifulSoup - Used to gather HTML content.
+request - to fetch the content from a URL.
+Counter - Counts the elements of an object.(Important for counting and organizing the elements within the site and then the program. 
+re - REGEX for processing text. (Vital for processing elements on the program)
+
+
+
+
+<img width="406" alt="image" src="https://github.com/user-attachments/assets/82229633-3d65-460c-bbae-77d7fe46a7b7">
+
+Define a function that cleans the text foudn within the 
+
+Define a function that cleans the text found within the search results. Also notating the limit of 4 characters to avoid words that dont matter.
+REGEX usage here "re.findall" Finds all word-like patterns (\b\w+\b)
+The limit is  \b meaning what the word is bound to, and \w+ matches any word 
+Filtering Words: The programmer limits the words to those that have at least 4 characters. This avoids common small words (e.g., "the", "is", "on") that aren't very useful for word frequency analysis.
+After the filter is run through, the list of cleaned words is then returned to us.
+
+<img width="421" alt="image" src="https://github.com/user-attachments/assets/5ee9176a-1a0c-4480-b143-d7b804f8bf21">
+
+
+
+
+
+
+
+
 ---
 
 ## Usage Overview
@@ -110,12 +141,12 @@ The program supports displaying as many characters as needed based on the site's
 
 ---
 
-## New in Version 0.5
+## Version 1.0
 
 - **Enhanced Wordlist Variability:** Add symbols, numbers, and capitalize words to the wordlist for more complex password generation.
 - **Improved Scraping Efficiency:** Faster and more robust scraping engine with better error handling.
 
-![Version 0.5](https://github.com/user-attachments/assets/9d1ae180-e00b-42d6-9165-6a0412282b89)
+![Version 1.0](https://github.com/user-attachments/assets/9d1ae180-e00b-42d6-9165-6a0412282b89)
 
 ---
 
