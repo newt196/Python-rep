@@ -44,7 +44,7 @@ The program supports displaying as many characters as needed based on the site's
 
 ---
 
-## New in Version 0.5
+## Version 0.5
 
 - **Enhanced Wordlist Variability:** Add symbols, numbers, and capitalize words to the wordlist for more complex password generation.
 - **Improved Scraping Efficiency:** Faster and more robust scraping engine with better error handling.
