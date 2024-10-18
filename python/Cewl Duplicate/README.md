@@ -65,12 +65,12 @@ lastly counts and handles all of the most common words or the words that appear 
 
 Where before is to gather all of the most common elements within the function.
 We are now trying to show the user all of the most common elements. 
-
 "If" (isinstance(result, str)) A conditional statement checks whether result is a string.
  If the result is a string, it means an error occurred since get_top_words() returns a string in case of errors.
 
-else Block - "If" result is not a string (meaning no error occurred), the else block will execute.
-Effect: This block clears the previous results from the result text box (result_text.delete(1.0, tk.END)) and displays the top words with their counts using a for loop.
+
+"else" Block - If result is not a string (meaning no error occurred), the else block will execute.
+This block clears the previous results from the result text box (result_text.delete(1.0, tk.END)) and displays the top words with their counts using a for loop.
 for Loop (for word, count in result):
 
 
