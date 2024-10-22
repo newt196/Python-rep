@@ -1,4 +1,4 @@
-# Basic Meta Data for Phoptos
+# Basic Meta Data for Photos
 
 ## Overview
 
