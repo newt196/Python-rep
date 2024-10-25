@@ -2,6 +2,15 @@
 
 This Python application converts Roman numeral strings to their integer equivalents. The solution implements efficient rules for Roman numeral addition and subtraction to deliver the correct integer.
 
+
+<img width="574" alt="image" src="https://github.com/user-attachments/assets/9e2a71c8-a281-45d5-8af1-34031bd4e33e">
+
+
+v<img width="938" alt="image" src="https://github.com/user-attachments/assets/4f97fc0d-1538-49cf-b72a-3ea8c3e95b27">
+
+
+<img width="572" alt="image" src="https://github.com/user-attachments/assets/5bec5fe6-b586-4915-8686-d70e8bddc003">
+
 ## Problem Description
 
 Given a Roman numeral as a string, the goal is to convert it into an integer. Roman numerals use the following symbols and values:
@@ -62,10 +71,4 @@ class Solution:
         return total
 
 
-<img width="574" alt="image" src="https://github.com/user-attachments/assets/9e2a71c8-a281-45d5-8af1-34031bd4e33e">
 
-
-v<img width="938" alt="image" src="https://github.com/user-attachments/assets/4f97fc0d-1538-49cf-b72a-3ea8c3e95b27">
-
-
-<img width="572" alt="image" src="https://github.com/user-attachments/assets/5bec5fe6-b586-4915-8686-d70e8bddc003">
