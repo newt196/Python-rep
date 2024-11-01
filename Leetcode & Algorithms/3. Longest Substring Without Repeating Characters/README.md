@@ -55,12 +55,7 @@ for right in range(len(s)): # here we want to move the pointer across the provid
 
 Chats visual representation of the logic starting with the "while" loop
 
-Iteration	s[right]	Action	left	right	Current Substring	max_length
-1	'a'	Add 'a' to window	0	0	"a"	1
-2	'b'	Add 'b' to window	0	1	"ab"	2
-3	'c'	Add 'c' to window	0	2	"abc"	3
-4	'a'	Duplicate found	1	3	"bca"	3
-5	'b'	Duplicate found	2	4	"cab"	3
-6	'c'	Duplicate found	3	5	"abc"	3
-7	'b'	Add 'b' to window	4	6	"cb"	3
+
+<img width="340" alt="image" src="https://github.com/user-attachments/assets/a9f644b6-71f7-416d-8024-67625211aa95">
+
 
