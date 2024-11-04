@@ -48,16 +48,22 @@ Also position 15 needs to be replaced with fizzbuzz
 
 started with assigning an my_array and setting the list to n+1.
 
-Full code includes    my_array = list(range(1, n + 1))  
+Full code includes   
+
+
+my_array = list(range(1, n + 1))  
+
+
 Initially going to create a new def to perform the logic on the new array created listed as result.
 Altghough it was seen as to tedious and uneccessary. We can create and cram the logic within the same fizzbuzz def. 
 
-
 The logic goes. We first create a list with the given logic.
+   
     def fizzBuzz(self, n: int) -> List[str]:
         result = [] 
 
 Using the below to add to the array given n + 1 starting at 1. 
+       
         for x in range(1, n + 1):
 
 We now use the following if/elif statements to complete the logic for the program. 
@@ -73,6 +79,7 @@ We now use the following if/elif statements to complete the logic for the progra
 
 
 The ending else statment is used to skip through the logic if none of the following have been made. 
+           
             else:
                 result.append(str(x))  
 
