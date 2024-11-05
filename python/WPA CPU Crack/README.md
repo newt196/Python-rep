@@ -23,7 +23,10 @@ NMeed more research on why that is and to adjust the code as such
 
 Success
 
-Failed :(
+<img width="368" alt="image" src="https://github.com/user-attachments/assets/455d5c85-397b-4ffd-8022-5c86f880d9d4">
+
+
+Failed(02) Same Hash Same | Same Password List :(
 
 <img width="371" alt="image" src="https://github.com/user-attachments/assets/dc8ce084-f84e-4f06-8dcc-950d7f9f7311">
 
