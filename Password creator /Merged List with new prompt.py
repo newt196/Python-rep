@@ -10,10 +10,9 @@ def merge_files(file1, file2, output_folder):
             list1 = f1.read().splitlines()
             list2 = f2.read().splitlines()
 
-        # Merge and remove duplicates
+        # Merge and remove 
         merged_list = list(set(list1 + list2))
 
-        # Write out
         output_file = os.path.join(output_folder, "New_list.txt")
         with open(output_file, "w", encoding="utf-8") as outfile:
             for item in merged_list:
@@ -25,17 +24,14 @@ def merge_files(file1, file2, output_folder):
         print("Something maybe missing?")
         messagebox.showerror("Error", "One or both of the files do not exist.")
 
-# Create a Tkinter window
 root = tk.Tk()
 root.withdraw()  # Hide the root window
 
-# Ask user to select the first file
 file1 = filedialog.askopenfilename(title="Select the first file", filetypes=(("Text files", "*.txt"), ("All files", "*.*")))
 if not file1:
     messagebox.showerror("Error", "No file selected.")
     exit()
 
-# Ask user to select the second file
 file2 = filedialog.askopenfilename(title="Select the second file", filetypes=(("Text files", "*.txt"), ("All files", "*.*")))
 if not file2:
     messagebox.showerror("Error", "No file selected.")
