@@ -50,6 +50,52 @@ Password Juicer is a Python-based wordlist generator designed to create optimize
 
 ---
 
+**Code Breadkdown**
+
+<img width="292" alt="image" src="https://github.com/user-attachments/assets/86581f2c-0cc5-4c73-aebf-364f3b83a7ff">
+
+Main Imports and Blocks that help run the program. 
+** A few notes is that within tkinter(messagebox & filedialog) help control the info and feedback provided within the program. 
+** This includes errors and notifications
+
+
+<img width="355" alt="image" src="https://github.com/user-attachments/assets/ad086355-3e3d-40f1-9eba-b198cf647e2f">
+
+The main Class within cashpass that helps maintain fucntions, and vairables within the main program. Mainly gui and logic control.
+
+**Im not going to get into the style and formatting of the format. 
+
+<img width="296" alt="image" src="https://github.com/user-attachments/assets/a9ea3c04-2c8e-4e99-aa34-6a5a75587378">
+
+Medthod that is called when the user submits a word, start of the program. 
+
+            self.words.append(word)
+
+Appending words into the program with submit and enter. 
+            
+            self.update_word_display()
+
+a if statments is used to add, and display the word that the user has choosen. 
+
+
+
+
+<img width="317" alt="image" src="https://github.com/user-attachments/assets/c204f6e7-68a8-4e49-be12-408ecb11b22c">
+Reset words and update word display is used to better control the flow of variables within the program. 
+
+ALGO 
+
+
+<img width="350" alt="image" src="https://github.com/user-attachments/assets/46d995c6-0d3c-4995-a3da-006ab05004e2">
+For help here: https://www.geeksforgeeks.org/bubble-sort-algorithm/
+
+
+
+
+
+
+
+
 ## How It Works
 
 1. **Input Target Information:**
