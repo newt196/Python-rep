@@ -83,8 +83,11 @@ a if statments is used to add, and display the word that the user has choosen.
 <img width="317" alt="image" src="https://github.com/user-attachments/assets/c204f6e7-68a8-4e49-be12-408ecb11b22c">
 Reset words and update word display is used to better control the flow of variables within the program. 
 
+
+
 ALGO 
 
+Bubble Sort:
 
 <img width="350" alt="image" src="https://github.com/user-attachments/assets/46d995c6-0d3c-4995-a3da-006ab05004e2">
 For help here: https://www.geeksforgeeks.org/bubble-sort-algorithm/
@@ -92,8 +95,27 @@ For help here: https://www.geeksforgeeks.org/bubble-sort-algorithm/
 
 
 
+Merge Sort: 
+
+<img width="341" alt="image" src="https://github.com/user-attachments/assets/1e5400bb-3855-4bcb-a2ff-cd8c6e6f6e79">
 
 
+REF 
+
+https://www.geeksforgeeks.org/python-program-for-merge-sort/
+https://pythonmania.org/python-program-for-merge-sort/
+https://bpb.opendns.com/b/https/www.alps.academy/python-merge-sort/
+
+
+
+Quick Sort
+
+<img width="379" alt="image" src="https://github.com/user-attachments/assets/7ca70b55-c959-4167-b639-c20c9939ad0b">
+
+Ref
+
+https://www.geeksforgeeks.org/python-program-for-quicksort/
+https://pythonmania.org/python-program-for-quick-sort/
 
 
 ## How It Works
