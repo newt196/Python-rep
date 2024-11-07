@@ -1,5 +1,13 @@
 **https://leetcode.com/problems/reverse-integer/**
 
+
+<img width="627" alt="image" src="https://github.com/user-attachments/assets/9afcf579-8d0a-4fa9-8216-b873a3c6f9a2">
+
+
+
+<img width="625" alt="image" src="https://github.com/user-attachments/assets/214eb7db-a44c-42c9-bfd5-6278316cbca6">
+
+
 Given a signed integer, just meaning -1,0,1 backwards and forwards.
 
 
