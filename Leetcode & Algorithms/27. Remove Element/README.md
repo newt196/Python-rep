@@ -1,5 +1,4 @@
-**https://leetcode.com/problems/remove-element
-**
+**https://leetcode.com/problems/remove-element**
 
 
 Given an integer array and an integer val, remove all occurrences of val in nums in-place. The order of the elements may be changed. The return
