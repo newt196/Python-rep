@@ -1,7 +1,5 @@
 **https://leetcode.com/problems/merge-sorted-array**
 
-https://leetcode.com/problems/merge-sorted-array
-
 Given two integer arrays in non decreasing(no order?) We need to merge into a single array sorted in non-decreasing order 1123 | increasing 123
 
 Seems like non decreasing is ordered but in relations to the same number. 
