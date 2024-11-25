@@ -1,3 +1,5 @@
+**https://leetcode.com/problems/h-index**
+
 Given an array of integers [citations] where [citations[i]] is the number of citations a researcher received for their [i]th paper, return the researchers h-index.
 
 -Initial explanation is kind of confusing, but it sounds like using the value and area of the index to find this h. 
