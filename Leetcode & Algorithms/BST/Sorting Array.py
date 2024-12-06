@@ -33,4 +33,5 @@ def organize_with_bst(arr):
     result = []
     bst.in_order_traversal(bst.root, result)
     return result
-
+    # array = []
+    # print()
