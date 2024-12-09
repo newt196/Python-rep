@@ -1,4 +1,4 @@
-Info on Singly Linked List
+**Info on Singly Linked List**
 
 https://csvistool.com/LinkedList
 
