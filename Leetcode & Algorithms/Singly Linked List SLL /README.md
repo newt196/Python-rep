@@ -106,6 +106,103 @@ Delete by value, same with add by value if methods are adjusted
 Remember we can start at the beginning or tail end, unsure if this was mentioned within the notes
 
 
+Some basic leetcode code models provide by Chat
+
+note the _init_ meaning the initialization vector for both the class and def for self.
+
+
+
+	class Node:
+	    def __init__(self, data):
+	        self.data = data
+	        self.next = None
+	
+	class SinglyLinkedList:
+	    def __init__(self):
+	        self.head = None
+	
+	    # Print the linked list
+	    def print_list(self):
+	        current = self.head
+	        while current:
+	            print(current.data, end=" -> ")
+	            current = current.next
+	        print("None")
+		
+
+^this is an example for the basic setup for a SLL^
+
+Reverse SLL
+
+	def reverse_linked_list(head):
+	    prev = None
+	    current = head
+	    while current:
+	        next_node = current.next  # Store the next node
+	        current.next = prev       # Reverse the pointer
+	        prev = current            # Move prev one step forward
+	        current = next_node       # Move current one step forward
+	    return prev  # New head of the reversed list
+
+
+Find the Middle if available
+
+
+	def find_middle(head):
+	    slow, fast = head, head
+	    while fast and fast.next:
+	        slow = slow.next       # Move slow by 1 step
+	        fast = fast.next.next  # Move fast by 2 steps
+	    return slow  # Slow pointer will be at the middle
+
+
+Merge two lists
+
+	def merge_sorted_lists(l1, l2):
+	    dummy = Node(0)
+	    current = dummy
+	    while l1 and l2:
+	        if l1.data < l2.data:
+	            current.next = l1
+	            l1 = l1.next
+	        else:
+	            current.next = l2
+	            l2 = l2.next
+	        current = current.next
+	    current.next = l1 or l2  # Append the remaining nodes
+	    return dummy.next
+
+
+Remove the nth node from the end of the list
+*note this uses two pointers from left to right and right to left
+
+
+	def remove_nth_from_end(head, n):
+	    dummy = Node(0)
+	    dummy.next = head
+	    slow = fast = dummy
+	
+	    # Move fast ahead by n+1 steps
+	    for _ in range(n + 1):
+	        fast = fast.next
+	
+	    # Move slow and fast together until fast reaches the end
+	    while fast:
+	        slow = slow.next
+	        fast = fast.next
+	
+	    # Remove the nth node
+	    slow.next = slow.next.next
+	    return dummy.next
+
+
+
+
+
+
+
+
+
 
 
 
