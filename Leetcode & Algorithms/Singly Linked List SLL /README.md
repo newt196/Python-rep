@@ -89,17 +89,17 @@ Inset element at the beginning
 
 Delete by value, same with add by value if methods are adjusted
 
-def delete(self, value):
-    if not self.head:  # If the list is empty
-        return
-    if self.head.data == value:  # If the head contains the value
-        self.head = self.head.next  # Update the head to the next node
-        return
-    current = self.head
-    while current.next and current.next.data != value:
-        current = current.next
-    if current.next:  # If the value is found
-        current.next = current.next.next
+			def delete(self, value):
+			    if not self.head:  # If the list is empty
+			        return
+			    if self.head.data == value:  # If the head contains the value
+			        self.head = self.head.next  # Update the head to the next node
+			        return
+			    current = self.head
+			    while current.next and current.next.data != value:
+			        current = current.next
+			    if current.next:  # If the value is found
+			        current.next = current.next.next
 
 
 *Editors note found in "https://csvistool.com/LinkedList" 
