@@ -113,7 +113,7 @@ Sort ascend or descend
 
 Replace and Assign
       			
-              my_list = [1, 2, 3, 4]
+             			my_list = [1, 2, 3, 4]
       				my_list[1:3] = [99, 88]  # Replace elements at indices 1 and 2
       				print(my_list)  # Output: [1, 99, 88, 4]
 
