@@ -1,10 +1,6 @@
 **Bubble Sort**
 
 
-https://see-algorithms.com/sorting/BubbleSort
-
-Bubble Sort 
-
 https://csvistool.com/BubbleSort
 
 https://see-algorithms.com/sorting/BubbleSort
