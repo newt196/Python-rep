@@ -1,4 +1,4 @@
-**Bubble Sort**
+**Bubble Sort** 
 
 
 https://csvistool.com/BubbleSort
@@ -13,6 +13,8 @@ In my humble explanation it just seems the we have two pointers or two entities 
  
 [9,5,3,4,56,68,5,1] > [1,3,4,5a,5b,9,56,68] per the website.
 
+For the most part, should not be used. Use cases are so small, its not usefull. Better
+sorts are Quick, Merge and Heap.
 
 BIG O efficiency 
 
