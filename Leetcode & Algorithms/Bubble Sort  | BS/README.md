@@ -1,5 +1,5 @@
 **Bubble Sort** 
-
+^not effecient
 
 https://csvistool.com/BubbleSort
 
