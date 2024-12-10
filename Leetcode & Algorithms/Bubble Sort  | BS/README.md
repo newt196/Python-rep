@@ -17,7 +17,9 @@ In my humble explanation it just seems the we have two pointers or two entities 
 BIG O efficiency 
 
 Sorted: O(n)
+
 Average: O(n^2)
+
 Worst Case(List is in reverse order): O(n^2) 
 
 
