@@ -195,6 +195,77 @@ Remove the nth node from the end of the list
 	    slow.next = slow.next.next
 	    return dummy.next
 
+		class Node:
+		    def __init__(self, data): # some key notes __ > _ | init is used to initalize the class
+		        self.item = data    # self and data are used and seperated with ","
+		        self.ref = None
+
+^^^Remember 
+
+
+		Class Node:
+			def__init__(self, data): # correct
+				self.item = Data # this was wrong, remember that item needs to be replaced or reference the current data
+				self.ref = None	# was all wrong, need to remember we have self.item and self.ref(for the next item) this needs to be None
+						for the reference of the next node or item
+^^^ first part of SLL
+
+
+Cases for adding to the Beginning and End
+
+
+Beginning
+
+		def beginning(self, data):
+			new_node = Node(data) # referencing the new data coming to the head
+			new_node.next = self.head # pushing the old node by 1
+			self.head = new_node # pushed nodes 
+
+Going to better understand this with an example <--- just for me
+EX: [0,4,9,7,8]
+Add the value 3
+New Node points to the beginning > we assign the new node to the self.head which is the number 3.
+
+The number 3 is then set to the beginning. Nothing more nothing less. We then can keep adding numbers due to the nature of new_node self iterating in the 3 and 5th line
+
+End
+						
+      							def End(self, data):
+							new_node = Node(data)
+							if not self.head: 
+								self.head = new_node
+								return
+							current = self.head
+							while current.next:
+								current = current.next
+							current.next = new_node
+
+Just for me.
+
+In the example we have the following
+EX: [3,0,4,9,7,8]
+
+We want add 12 at the end. 
+
+new_node now is set to Node(12) which will be used to access "where" it goes. Which in this case is at the end
+
+the first if statement is used to see if the list is empty.
+
+Because we are have items we move to the iteration
+We use .next to move through the list sequentially until we reach the end.
+
+In this case the end is reached current.next is now the new node.
+Meaning 
+[3,0,4,9,7,8,12]
+
+visualizing the code means we iterate with .next until the end is reached
+Once reached current.next is set to new_node. 
+
+
+
+
+
+
 
 
 
