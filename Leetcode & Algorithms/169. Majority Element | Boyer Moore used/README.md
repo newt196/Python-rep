@@ -4,7 +4,9 @@
 <img width="864" alt="image" src="https://github.com/user-attachments/assets/fdc92e8a-1b6d-47ed-b965-95de713dde92" />
 
 
+After editing, the algo used here is the Boyer Moore Algorithm. 
 
+Literally based off of comparing elements in a row. 
 
 This is the redo of the question, because i was getting a time limit exceeded. 
 Failed on 25/42
