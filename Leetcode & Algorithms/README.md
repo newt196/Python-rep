@@ -1,3 +1,7 @@
+Just learned that you have to hit submit 😡 to pass the leetcode problem 😡.
+
+Now need to go through each existing problem to make sure they pass each leetocde solution given and don't exceed the time limit. 
+
 **Leetcode systematic approach**
 
 Courtesy of "https://www.youtube.com/watch?v=OTNe0eV8418&ab_channel=Codebagel"
