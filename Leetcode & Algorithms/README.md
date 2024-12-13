@@ -1,4 +1,4 @@
-https://leetcode.com/u/newt156
+**https://leetcode.com/u/newt156**
 
 Just learned that you have to hit submit 😡 to pass the leetcode problem 😡.
 
