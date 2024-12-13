@@ -1,3 +1,5 @@
+https://leetcode.com/u/newt156
+
 Just learned that you have to hit submit 😡 to pass the leetcode problem 😡.
 
 Now need to go through each existing problem to make sure they pass each leetocde solution given and don't exceed the time limit. 
