@@ -1,6 +1,129 @@
 **https://leetcode.com/problems/best-time-to-buy-and-sell-stock**
 
 
+
+Project that revisits and fixes leetcode solutions throughout. In this case we are fixing the best time to buy sell stock.
+
+Current code is 
+
+	class Solution:
+	    def maxProfit(self, prices: List[int]) -> int:
+	        min_value = min(prices)
+	        min_index = prices.index(min_value)
+	        remove_prices = prices[min_index:]
+	        
+	        max_value = max(remove_prices)
+	        max_index = remove_prices.index(max_value)
+	        
+	        total = max_value - min_value
+	        return total
+
+Code stops at current variable
+[2,4,1]
+
+Output is 0 
+Expected is 2 here
+
+When thinking about why the solution failed, I am a sure that it has something to do with how the code and the code logic is 
+dealing with a lower number  at the end. More specially with 1 at the end. 
+In this case, the 4 maximum price for profit calculation occurs before the 1 minimum price in the entire list.
+
+We need to rethink the structure of the code to account for a min value and a min value at the last index. 
+
+
+Going to go through an iterable approach with a Single Linked List and if the lowestr price is found it is calctulated between the iterations and the max profit.
+
+
+We start this the same way we with the wrong answer. 
+Setting 
+
+        min_price = prices[0] 
+	max_profit = 0 
+
+
+to keep track of the min_price and max profit if or once found. 
+prices[0] just helps us start at 0 and change the number as we singly iterate.
+
+For the logic used in the iteration, we use a for loop that starts at the second index, that being onme. 
+
+We need to make sure that the iteration or price check starts at index 1 because it makes more sense to keep track after holding the first number or index 0.
+
+For...Heh the for loop, we use do the following
+
+
+		for price in prices[1:]:  
+            		if price < min_price:
+Once the following has been done, we then update the price to the minimum price. 
+
+Else 
+		elif price - min_price > max_profit:
+                	max_profit = price - min_price  
+
+
+we update the max price if found. 
+
+What we have is 
+
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        if not prices:  
+            return 0
+
+        min_price = prices[0]  
+        max_profit = 0  
+
+        for price in prices[1:]:  
+            if price < min_price:
+                min_price = price  
+            elif price - min_price > max_profit:
+                max_profit = price - min_price  
+
+        return max_profit
+
+
+A little different from 
+
+
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        min_value = min(prices)
+        min_index = prices.index(min_value)
+        remove_prices = prices[min_index:]
+        
+        max_value = max(remove_prices)
+        max_index = remove_prices.index(max_value)
+        
+        total = max_value - min_value
+        return total
+
+
+Where the first question, relies on variables and if statements. Where the second question just relies on variables.
+
+
+
+
+
+
+
+
+
+
+ 
+        max_profit = 0 
+
+        for price in prices:
+            if price < min_price:
+                min_price = price  # Update the minimum price
+            elif price - min_price > max_profit:
+                max_profit = price - min_price  # Update the max profit
+
+        return max_profit
+
+
+
+
+
+
 Given an array of prices where prices[i] is the price of a given stock on the Ith day.
 
 You want to maximize the profict vy choosing a single day to buy one stock and choosing a different day in the future to sell the stock.,
