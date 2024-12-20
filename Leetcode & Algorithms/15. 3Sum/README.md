@@ -3,6 +3,119 @@ Sorting problems
 
 **https://leetcode.com/problems/3sum**
 
+This one was close, the answer code is 
+
+	class Solution:
+	    def threeSum(self, nums: List[int]) -> List[List[int]]:
+	        if not (3 <= len(nums) <= 3000):
+	            return None  
+
+        for i in nums:
+            if not (-100000 <= i <= 100000):
+                return None
+        nums.sort()  
+        triplet_count = 0
+        final_temp_list = []
+        
+        k = 0  
+        
+        for i in range(len(nums) - 1):
+            if i > 0 and nums[i] == nums[i - 1]:
+                continue
+            
+            s = set()
+            temp_list = []
+            
+            temp_list.append(nums[i])
+            
+            curr_k = k - nums[i]
+            
+            for j in range(i + 1, len(nums)):
+                if (curr_k - nums[j]) in s:
+                    triplet_count += 1
+                    
+                    temp_list.append(nums[j])
+                    temp_list.append(curr_k - nums[j])
+                    
+                    triplet = sorted(temp_list)
+                    if triplet not in final_temp_list:
+                        final_temp_list.append(triplet)
+                    
+                    temp_list.pop(2)
+                    temp_list.pop(1)
+                
+                s.add(nums[j])
+        
+        return final_temp_list
+        
+       
+
+I am getting a time limit exceeded on the  311 / 313. I cant put the variables, because the input is too long.
+
+
+So the chat analysis(needed for CS optimization) of the breakdown is that the i am repeating the triplet validation and unoptimized nested loops. This was the scope 
+of my usage of chat without giving away the answer.
+
+Needed a way to limit the usage of loops and better handle the triplet validation.
+
+From my understanding this could be done by using multiple pointers or better defined "def". This is due to  my current O being O(n^2) to O(n).
+
+This is where my lack of algo practice shows, because for lower inputs i am able to case by. Altghough sadly as inputs grow my approach breaks down.
+This is sadly new, because I as a rookie thought the inputs would stay low.
+
+I have to now think about the big O when given very large inputs.
+
+In this case, we need to remove the {if not} statement because its redundant and just adds to the complexity. 
+
+
+
+So in this case, we needed to keep the restraint checker.
+
+With 
+
+
+        if not (3 <= len(nums) <= 3000):
+            return None  
+
+        for i in nums:
+            if not (-100000 <= i <= 100000):
+                return None
+
+We removed the triplet_count, because this we needed to check for if triplet was found. This was previously needed to iterate over every triplet found. Again adding to the overall complexity of the code base.
+
+
+As for the loop, we readjust the ending position of the the for loop with the following 
+
+        for i in range(len(nums) - 2):
+            if i > 0 and nums[i] == nums[i - 1]:
+                continue
+
+We don’t want to consider the same number as the first element of the triplet if it has already been processed which would generate duplicate triplets. If the current number is the same as the previous one, we are allowed to skip it.
+
+We are now tasked with finding the target and the prefix for the next loop with the following.
+
+
+
+            target = -nums[i]
+            left, right = i + 1, len(nums) - 1
+
+
+As said before, we need two pointers to iterate through the previously stated for loop with the len(nums)
+
+
+while left < right:
+                current_sum = nums[left] + nums[right]
+                
+                if current_sum == target:
+                    result.append([nums[i], nums[left], nums[right]])
+
+Finish writeup.
+
+
+        
+        
+
+
 
 
 
