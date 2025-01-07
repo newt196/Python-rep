@@ -79,6 +79,14 @@ to modify the elements within the new array letting us return the answer. All in
 The only thing adjusted was the l.count within the (i) < 2 which helps maintain the amount of elements that are
 returned within the new (in-place) array.
 
+
+
+
+<img width="901" alt="image" src="https://github.com/user-attachments/assets/64b35740-7351-47ae-a521-d7f73fe4f97c" />
+
+
+
+
 **Revised Part 2**
 
 
