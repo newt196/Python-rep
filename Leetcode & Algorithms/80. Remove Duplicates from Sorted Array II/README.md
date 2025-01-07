@@ -1,6 +1,10 @@
 
 **https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii**
 
+Didnt review properly, and this was already solved with the correct solution. 
+
+Found a new way to solve with pointers though.
+
 
 Given an integer array sorted in increasing order, remove some duplicates IN-PLACE since in each unique element appears at most twice. The 
 relative order of the elements should be kept the same.
