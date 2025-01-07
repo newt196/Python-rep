@@ -103,6 +103,40 @@ needs to be put back into the nums with logic. found the following to possibly t
 Using (nums[:len(l)]) allows you to replace only the beginning portion of nums with the unique elements collected in l. 
 With this now implemented before the return function, we can sort the proper array and return the answer. 
 
+**Part 2**
+
+Revisiting Remove Duplicates from Sorted Array
+
+the notes for part 2 have been provided. 
+
+Here is the ans I have for the 2 given scenarios 
+
+class Solution:
+    def removeDuplicates(self, nums: list[int]) -> int:
+        l = []
+        for i in nums:
+            if i not in l:
+                l.append(i)
+        nums[:len(l)] = l 
+        return len(l)  
+
+In already looking at the first ans, I am pretty sure this will fail. 
+
+Due to the fact that it does not catch constraints or handles large data sets effectively.
+
+Currently checking where it fails. 
+
+Weirdly enough it does not fail. 
+
+The notes are as follows
+
+
+<img width="908" alt="image" src="https://github.com/user-attachments/assets/5f564051-074b-443b-9ac8-6b2c76ca202f" />
+
+This is interesting to note. Unsure if this is stated early, but this loop is a single iteration with the for loop provided.
+Probably going to reread part 1. Overall cool that the solution passes, although it is an easy question. 
+
+
 
 
 
