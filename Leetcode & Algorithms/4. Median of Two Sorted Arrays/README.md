@@ -92,7 +92,9 @@ In all we have
                 return (sort[median - 1] + sort[median]) / 2
 
 
+This part passes, happy about this one. 
 
+<img width="866" alt="image" src="https://github.com/user-attachments/assets/64da4d9e-7070-4517-90a0-e96d37b44769" />
 
  
 
