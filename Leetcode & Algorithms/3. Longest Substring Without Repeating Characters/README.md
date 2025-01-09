@@ -61,4 +61,10 @@ Chats visual representation of the logic starting with the "while" loop
 
 <img width="340" alt="image" src="https://github.com/user-attachments/assets/a9f644b6-71f7-416d-8024-67625211aa95">
 
+Part 2 - Solution.
+
+This solution passes correctly
+
+<img width="887" alt="image" src="https://github.com/user-attachments/assets/72031df0-3a63-481b-a00f-2ddd716479d8" />
+
 
