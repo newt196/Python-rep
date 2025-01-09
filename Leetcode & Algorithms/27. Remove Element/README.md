@@ -98,4 +98,14 @@ This has already been established, but the first pointer is k = 0 While the seco
 
 
 
+  Part 2 - Solution.
+
+This solution passes correctly
+
+
+<img width="923" alt="image" src="https://github.com/user-attachments/assets/2bde92c8-2d0d-4c62-84d8-44871fafd18a" />
+
+
+
+
 
