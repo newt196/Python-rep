@@ -2,6 +2,14 @@
 
 
 
+
+
+There is a portion that is developed that connects to the MYSQL which will be added in the MYSQL portion of this project.
+
+The code is specially called and made to be sent to view later within MYSQL. 
+
+
+
 Outline of the Python portion of the project and its functionalit
 
 
