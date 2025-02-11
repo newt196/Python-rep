@@ -74,10 +74,11 @@ The eval is set to (=1) because we want to look at the difference of the dates b
 Thank you stack
 
 ^^This solves the first part of the eval for the dates, we then want to set an eval statement for following 
-		if temp 1is > temp 2
-		return yay
-		temp 1 < temp 2
-		drop temp 1
+					
+     					if temp 1is > temp 2
+					return yay
+					temp 1 < temp 2
+					drop temp 1
 
 
 We pair this eval with an AND statement and end the statement with the following 
@@ -90,9 +91,9 @@ We pair this eval with an AND statement and end the statement with the following
 In all we have the following 
 
 
-SELECT w1.id
-FROM Weather w1, Weather w2
-WHERE DATEDIFF(w1.recordDate, w2.recordDate) = 1 AND w1.temperature > w2.temperature;
+		SELECT w1.id
+		FROM Weather w1, Weather w2
+		WHERE DATEDIFF(w1.recordDate, w2.recordDate) = 1 AND w1.temperature > w2.temperature;
 
 
 Some side notes when testing and just general MySQL context notes
