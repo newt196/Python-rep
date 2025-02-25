@@ -78,3 +78,21 @@ d. Inner loop compares adjacent items with each other
 d. j = 0 starts at 0 or the first ele,ents and goes until n-1i-1
 
 
+
+Lets take more time with 
+
+this inner loop and break it down
+
+
+ for j in range(0, n-i-1):  
+                if nums[j] > nums[j+1]:  
+                    nums[j], nums[j+1] = nums[j+1], nums[j] 
+[5, 3, 8, 1, 2]
+
+ for j in range(0, n-i-1):  
+Starts the first iteration does the following 
+- starts at the first index or 0
+- Stop at n-i-1 We can look at n-i-1 more in depth with the first pass
+Start at 0 which means we have 5
+Stop at(first pass) 5(lenn(arr)) - 0(i)  - 1
+
