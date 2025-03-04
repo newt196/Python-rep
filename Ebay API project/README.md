@@ -1,5 +1,35 @@
 **Project Notes**
 
+Lamp project
+
+Wanted to develop a solution to pull eBay data for better listing info from what is provided in the site.
+While also learning some backend for learning purchases.
+
+Currently I am using the following to pull and process data
+
+Python | Ingress & Egress point from Ebay to local and cloud database | Computation for price change done here
+
+MYSQL | Used to sort and organize listing and seller data | Monitor Price and listing data | Indexing hgas been used for speed
+
+HTML & CSS | Frontend to list and showcase any items to purchase based on python math and MySQL storing
+
+PHP | Math and logic to give the user the possibility to showcase any good deals or massive price drops. 
+
+Backup solutions
+
+- CSV for backups on listing for eBay API data. Not really sorted
+- AWS RDS to create a cloud backup of database information(learning purpose within AWS)
+
+
+Security
+- accounts have been massively restricted.
+- HTTPS has been configured on the Apache site
+- You need an account to get into the initial index page for the site.
+- Local and cloud backups
+- Logging and event logs on the system and user accounts
+- API and key data are soon stored within a secure token
+
+
 
 
 
