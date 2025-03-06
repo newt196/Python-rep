@@ -7,6 +7,157 @@
 
 
 
+https://leetcode.com/problems/reverse-integer/description/
+
+Going to see if my initial reverse integer solution is working for all test cases.
+
+IF: work
+	then explain
+else: no work
+	then work it out and explain
+
+Current solution that passes all 3 test cases.
+
+Going to submit for wider acceptance now
+
+class Solution:
+    def reverse(self, x: int) -> int:
+        r = 0
+        n = abs(x)  
+
+        while n > 0:
+            r = r * 10 + n % 10
+            n //= 10
+        r = r if x > 0 else -r
+        if r < -2**31 or r > 2**31 - 1:
+            return 0  
+        return r
+
+
+solution = Solution()
+
+
+It does pass which is nice.
+
+r = 0
+n = abs(x)
+
+The solution needs to be in place hence we are starting out by initializing variables.
+
+r = 0 # the typical start place for a solution that can go to - to +
+
+n = abs(x)  # Work with the absolute value of x to simplify the reversal process.
+            # Without abs(x), handling negatives would be more complex.
+            # After reversing, we restore the sign based on the original x.
+
+in all we have an example of x = -321(negative for abs(x))
+
+we start with 
+r = 0
+n = abs(-321) # numbers ingested correctly to be able to manipulate later
+if we return n = abs(x)
+we get 321 # makes adding negative later much easier
+
+A breakdown of the logic is a while loop that starts with n being less than 0
+
+while n > 0: # abs(x) is plugged in in case x is a negative integer
+    r = r * 10 + n % 10 # runs to reverse the number
+    n //= 10
+
+
+n % 10 extracts the last digit of n.
+r * 10 + (n % 10) appends this digit to r (shifting previously stored digits left).
+n //= 10 removes the last digit from n, also This // operator divides the first number by the second number and rounds the result down to the nearest integer 
+
+
+
+Our 123 example:  123
+
+r = 0, n = 123
+
+First iteration r = 0 * 10 + 3 = 3
+n = 123 // 10 = 12
+
+Second iteration: r = 3 * 10 + 2 = 32
+n = 12 // 10 = 1
+
+Third iteration: r = 32 * 10 + 1 = 321
+n = 1 // 10 = 0
+Loop ends n = 0 | r = 321.
+In our case we use the following to reverse 
+
+
+After all of this is done, checks are done and adding the negative are added or nothing happens with 
+
+        r = r if x > 0 else -r
+
+r = r 	      # means what it means, most likely x was 0 or x was above that
+x > 0 else -r # we go back to x and the final state of r if x is less than 0 or a negative
+
+
+
+        if r < -2**31 or r > 2**31 - 1
+		return 0
+constraints here, no need to proceed more
+
+also notate
+else -r        # is used to add the negative back after the final while is done
+
+
+Order of operation 
+%
+*
++
+
+I want to walk through the loop one more time within a negative x
+while n > 0:
+r = r * 10 + n & 10
+n //= 10
+
+Lets make x = -21
+
+So for the loop 
+r = 0 * 10 + 21 % 10
+21 % 10 = 1
+0 * 10 = 0
+0 + 1 = 1
+
+r = 1
+
+n //= 10
+21  //= 10 = 2
+
+1st 
+r = 1
+n = 2
+
+Now we can run again 
+
+1 * 10 + 2 % 10
+2 % 10 = 2
+1 * 10 = 10
+
+10 + 2 = 12
+r = 12
+
+n 2 //= 10
+
+0
+
+End of loop we have 12
+
+because the x was less than 0 we add -r
+making it -12
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -17,6 +168,11 @@
 
 
 <img width="625" alt="image" src="https://github.com/user-attachments/assets/214eb7db-a44c-42c9-bfd5-6278316cbca6">
+
+
+
+**Old notes**
+
 
 
 Given a signed integer, just meaning -1,0,1 backwards and forwards.
