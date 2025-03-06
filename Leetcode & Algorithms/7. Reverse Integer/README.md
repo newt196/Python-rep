@@ -1,6 +1,13 @@
 **https://leetcode.com/problems/reverse-integer/**
 
 
+
+
+
+<img width="445" alt="image" src="https://github.com/user-attachments/assets/d0db7805-a60b-4a08-b1e2-db2e363795e1" />
+
+
+
 <img width="627" alt="image" src="https://github.com/user-attachments/assets/9afcf579-8d0a-4fa9-8216-b873a3c6f9a2">
 
 
