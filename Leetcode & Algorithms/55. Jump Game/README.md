@@ -1,5 +1,11 @@
 https://leetcode.com/problems/jump-game
 
+
+
+
+<img width="909" alt="image" src="https://github.com/user-attachments/assets/0a4e9ec8-cd19-4d57-ab97-1a8130f33ee7" />
+
+
 You are given integer array. You are initially positioned at the arrays first index(*0) and each element in the array
 represents your max jump length at the position.
 
